@@ -1,0 +1,1 @@
+[{"fields": {"age": 24, "full_name": "yin"}, "model": "people.person", "pk": 1}, {"fields": {"content": "123", "update_time": "2016-01-09T14:05:42.302Z", "pub_date": "2016-01-09T14:05:20.914Z", "title": "\u4e2d\u897f"}, "model": "people.article", "pk": 1}]
