@@ -1,4 +1,5 @@
 # coding=utf-8
+from django.shortcuts import render
 from django.views.generic.detail import DetailView
 from django.utils import timezone
 from django.http import HttpResponse
@@ -19,4 +20,14 @@ class ArticleDetailView(DetailView):
 
 
 def A(request):
-    return HttpResponse(str(3))
+    # request.session['has_commented'] = True
+    # request.session['name'] = "yin"
+    # request.session['age'] = "12"
+    # return HttpResponse('Thanks for your comment!')
+    # username = request.session.get("name","False")
+    # return render(request, 'article_detail.html',{"username":username})
+    return render(request, 'article_detail.html')
+
+     # if request.session.get('has_commented', False):
+     #    username = request.session.get("name","False")
+     #    return HttpResponse(username)
